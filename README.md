@@ -10,7 +10,7 @@ def create_bucket_class_location(bucket_name):
 
     bucket = storage_client.bucket(bucket_name)
     bucket.storage_class = "COLDLINE"
-    new_bucket = storage_client.create_bucket(bucket, location="us")
+    new_bucket = storage_client.create_bucket(bucket, location="asia-east1")
 
     print(
         "Created bucket {} in {} with storage class {}".format(
